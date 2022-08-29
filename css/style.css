@@ -53,7 +53,45 @@ a {
   height: 100%;
 }
 .header__nav {
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 92%;
+  margin: 5rem 0;
+  background-color: hsl(257deg, 27%, 26%);
+  transform: translateX(-50%);
+}
+.header__btn {
+  width: 100%;
+}
+.header__list-primary {
+  border-bottom: 1px solid hsl(257deg, 7%, 63%);
+}
+.header__list-primary, .header__list-secondary {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.header__item {
+  list-style: none;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.header__item a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
 }
 .header__hamburger-btn {
   cursor: pointer;
