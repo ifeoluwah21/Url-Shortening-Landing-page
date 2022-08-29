@@ -146,7 +146,11 @@
     p {
       padding-top: 0.3rem;
       @include font(0.8rem, 400, $red, left);
-      display: none;
+      max-height: 0;
+      transition: all 200ms ease-in-out;
+      &.error {
+        max-height: 2rem;
+      }
     }
   }
   &__input {
@@ -154,6 +158,15 @@
     padding: 1rem;
     font-size: 1.125rem;
     border: none;
+    &.border--red {
+      border: 5px solid $red;
+      &::placeholder,
+      &::-moz-placeholder,
+      &::-webkit-input-placeholder {
+        color: $red;
+      }
+    }
+
     &::placeholder,
     &::-moz-placeholder,
     &::-webkit-input-placeholder {
@@ -468,6 +481,7 @@
     padding: 3rem 2rem;
     background-image: url("../images/bg-shorten-desktop.svg");
     background-repeat: no-repeat;
+    align-items: flex-start;
 
     &__input-wrapper {
       padding: 0;

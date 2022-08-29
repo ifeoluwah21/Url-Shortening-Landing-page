@@ -197,13 +197,23 @@ a {
   font-weight: 400;
   color: hsl(0deg, 87%, 67%);
   text-align: left;
-  display: none;
+  max-height: 0;
+  transition: all 200ms ease-in-out;
+}
+.form__input-wrapper p.error {
+  max-height: 2rem;
 }
 .form__input {
   width: 100%;
   padding: 1rem;
   font-size: 1.125rem;
   border: none;
+}
+.form__input.border--red {
+  border: 5px solid hsl(0deg, 87%, 67%);
+}
+.form__input.border--red::placeholder, .form__input.border--red::-moz-placeholder, .form__input.border--red::-webkit-input-placeholder {
+  color: hsl(0deg, 87%, 67%);
 }
 .form__input::placeholder, .form__input::-moz-placeholder, .form__input::-webkit-input-placeholder {
   font-family: "Poppins", sans-serif;
@@ -553,6 +563,7 @@ a {
     padding: 3rem 2rem;
     background-image: url("../images/bg-shorten-desktop.svg");
     background-repeat: no-repeat;
+    align-items: flex-start;
   }
   .form__input-wrapper {
     padding: 0;
