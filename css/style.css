@@ -348,8 +348,11 @@ a {
 
 .boost {
   background-image: url("../images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
   background-color: hsl(257deg, 27%, 26%);
+  background-position: center;
   padding: 4rem 0;
+  background-size: cover;
 }
 .boost__info {
   width: 90%;
@@ -526,6 +529,8 @@ a {
   .form {
     display: flex;
     padding: 3rem 2rem;
+    background-image: url("../images/bg-shorten-desktop.svg");
+    background-repeat: no-repeat;
   }
   .form__input-wrapper {
     padding: 0;
