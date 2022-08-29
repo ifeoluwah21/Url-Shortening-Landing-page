@@ -549,6 +549,18 @@
     &:nth-of-type(3) {
       transform: translateY(6rem);
     }
+    &__avatar-container {
+      position: static;
+      transform: translateY(50%);
+      margin-left: 1.5rem;
+    }
+    &__info {
+      padding: 4rem 1rem 2rem 1.5rem;
+    }
+    &__title,
+    &__text {
+      text-align: left;
+    }
   }
 
   .boost {

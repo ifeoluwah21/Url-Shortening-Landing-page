@@ -630,6 +630,17 @@ a {
   .attr:nth-of-type(3) {
     transform: translateY(6rem);
   }
+  .attr__avatar-container {
+    position: static;
+    transform: translateY(50%);
+    margin-left: 1.5rem;
+  }
+  .attr__info {
+    padding: 4rem 1rem 2rem 1.5rem;
+  }
+  .attr__title, .attr__text {
+    text-align: left;
+  }
   .boost {
     background-image: url("../images/bg-boost-desktop.svg");
     background-repeat: no-repeat;
