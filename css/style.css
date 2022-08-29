@@ -58,14 +58,17 @@ a {
 }
 .header__nav {
   position: fixed;
-  display: none;
+  margin-top: -150%;
   z-index: 5;
   top: 0;
   left: 50%;
   width: 92%;
-  margin: 5rem 0;
   background-color: hsl(257deg, 27%, 26%);
   transform: translateX(-50%);
+  transition: all 200ms ease-in-out;
+}
+.header__nav[data-visible=true] {
+  margin-top: 5rem;
 }
 .header__btn {
   width: 100%;
@@ -102,9 +105,13 @@ a {
 .header__hamburger-btn {
   cursor: pointer;
 }
+.header__hamburger-btn:hover i {
+  color: hsl(255deg, 11%, 22%);
+}
 .header__hamburger-btn i {
   font-size: 2rem;
   color: hsl(257deg, 7%, 63%);
+  transition: all 200ms ease-in-out;
 }
 
 .hero {
@@ -433,7 +440,7 @@ a {
   color: hsl(180deg, 66%, 49%);
 }
 .footer__social-nav {
-  width: 50%;
+  width: 65%;
   margin: 2rem auto;
 }
 .footer__social-list {
