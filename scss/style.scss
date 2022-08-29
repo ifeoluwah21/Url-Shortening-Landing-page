@@ -323,6 +323,10 @@
       display: inline-block;
       padding: 0.5rem 1rem;
       width: 100%;
+      &:hover,
+      &:focus {
+        color: $cyan;
+      }
     }
   }
 
@@ -345,7 +349,12 @@
     & a {
       display: inline-block;
       text-decoration: none;
-      color: #fff;
+      color: $white;
+      transition: all 200ms ease-in-out;
+      &:hover,
+      &:focus {
+        color: $cyan;
+      }
       & i {
         font-size: 2rem;
       }
@@ -398,6 +407,11 @@
       width: auto;
       & a {
         color: $dark-gray;
+        transition: all 200ms ease-in-out;
+        &:hover,
+        &:focus {
+          color: $very-dark-blue;
+        }
       }
       &:not(&:last-of-type) {
         margin-right: 0.5rem;
@@ -534,6 +548,18 @@
     }
     &:nth-of-type(3) {
       transform: translateY(6rem);
+    }
+    &__avatar-container {
+      position: static;
+      transform: translateY(50%);
+      margin-left: 1.5rem;
+    }
+    &__info {
+      padding: 4rem 1rem 2rem 1.5rem;
+    }
+    &__title,
+    &__text {
+      text-align: left;
     }
   }
 
