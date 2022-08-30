@@ -198,6 +198,8 @@ a {
   color: hsl(0deg, 87%, 67%);
   text-align: left;
   max-height: 0;
+  width: 50%;
+  overflow-y: hidden;
   transition: all 200ms ease-in-out;
 }
 .form__input-wrapper p.error {
@@ -698,6 +700,7 @@ a {
     display: flex;
     flex-flow: row nowrap;
     width: 45%;
+    min-width: 29.5rem;
     margin: 0;
   }
   .footer__list h4 {
@@ -715,7 +718,7 @@ a {
   }
   .footer__social-nav {
     margin: 0;
-    width: 20%;
+    width: 13.5rem;
   }
 }
 
