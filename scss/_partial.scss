@@ -41,8 +41,7 @@ $dark-gray: hsl(257deg, 7%, 50%);
   text-align: center;
   text-transform: capitalize;
   transition: all 200ms ease-in-out;
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: $light-cyan;
   }
   &--cyan {
