@@ -273,6 +273,10 @@ a {
   font-weight: 400;
   color: #ffffff;
   text-align: center;
+  transition: all 200ms ease-in-out;
+}
+.link__output .btn[data-action=copied] {
+  background-color: hsl(257deg, 27%, 26%);
 }
 
 .stats {

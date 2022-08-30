@@ -203,6 +203,10 @@
       width: 100%;
       padding: 0.5rem;
       @include font(1rem, 400, $white, center);
+      transition: all 200ms ease-in-out;
+      &[data-action="copied"] {
+        background-color: $dark-violet;
+      }
     }
   }
 }
