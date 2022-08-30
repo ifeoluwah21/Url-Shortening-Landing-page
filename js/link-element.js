@@ -9,13 +9,19 @@ export function addLinkToDOM(link, shortLink) {
   </div>
   <div class="link__output">
     <a href=${shortLink} target="_blank" title="shortened link">${shortLink}</a>
-    <button class="btn link__output-btn btn--cyan border-s-round" type="button"><span>Copy</span></button>
+    <button data-action="copy" class="btn link__output-btn btn--cyan border-s-round" type="button"><span>Copy</span></button>
   </div>`;
-    parent.appendChild(article)
+    parent.appendChild(article);
 }
 
 parent.addEventListener("click", function (e) {
-    if (e.target.matches(".link__output-btn")) {
-        console.log(e, e.target.parentElement.firstElementChild.innerHTML)
+    if (e.target.matches(".link__output-btn[data-action]")) {
+        e.target.dataset.action = "copied";
+        e.target.innerHTML = "Copied!";
+        setTimeout(function () {
+            e.target.dataset.action = "copy";
+            e.target.innerHTML = "Copy";
+        }, 2000)
+        navigator.clipboard.writeText(e.target.parentElement.firstElementChild.innerHTML);
     }
 })
