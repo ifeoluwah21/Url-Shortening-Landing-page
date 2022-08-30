@@ -17,7 +17,7 @@
   text-transform: capitalize;
   transition: all 200ms ease-in-out;
 }
-.btn:hover, .btn:focus {
+.btn:hover {
   background-color: hsl(180deg, 83%, 77%);
 }
 .btn--cyan {
@@ -446,7 +446,7 @@ a {
   padding: 0.5rem 1rem;
   width: 100%;
 }
-.footer__item a:hover, .footer__item a:focus {
+.footer__item a:hover {
   color: hsl(180deg, 66%, 49%);
 }
 .footer__social-nav {
@@ -472,7 +472,7 @@ a {
   color: #ffffff;
   transition: all 200ms ease-in-out;
 }
-.footer__social-item a:hover, .footer__social-item a:focus {
+.footer__social-item a:hover {
   color: hsl(180deg, 66%, 49%);
 }
 .footer__social-item a i {
@@ -521,7 +521,7 @@ a {
     color: hsl(257deg, 7%, 50%);
     transition: all 200ms ease-in-out;
   }
-  .header__item a:hover, .header__item a:focus {
+  .header__item a:hover {
     color: hsl(255deg, 11%, 22%);
   }
   .header__item:not(.header__item:last-of-type) {

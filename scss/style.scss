@@ -344,8 +344,7 @@
       display: inline-block;
       padding: 0.5rem 1rem;
       width: 100%;
-      &:hover,
-      &:focus {
+      &:hover {
         color: $cyan;
       }
     }
@@ -372,8 +371,7 @@
       text-decoration: none;
       color: $white;
       transition: all 200ms ease-in-out;
-      &:hover,
-      &:focus {
+      &:hover {
         color: $cyan;
       }
       & i {
@@ -429,8 +427,7 @@
       & a {
         color: $dark-gray;
         transition: all 200ms ease-in-out;
-        &:hover,
-        &:focus {
+        &:hover {
           color: $very-dark-blue;
         }
       }
