@@ -12,7 +12,6 @@ export function linkValidation(input) {
         throw Error("Kindly provide a URL");
     } else {
         let result = input.value;
-        console.log(input.value)
         errorMsg.classList.remove("error");
         link.classList.remove("border--red");
         input.value = "";

@@ -6,7 +6,6 @@ import { addLinkToDOM } from "./link-element.js";
 
 document.addEventListener("DOMContentLoaded", (e) => {
     const linksInfo = getFromLocalStorage();
-    console.log(linksInfo);
     if (!linksInfo) {
         return
     }
